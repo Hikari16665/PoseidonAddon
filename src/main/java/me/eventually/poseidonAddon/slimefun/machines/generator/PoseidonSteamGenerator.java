@@ -14,8 +14,8 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 
-public class PoseidonWaterGenerator extends AbstractGenerator {
-    public PoseidonWaterGenerator(ItemGroup itemGroup, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {
+public class PoseidonSteamGenerator extends AInputConditionalGenerator {
+    public PoseidonSteamGenerator(ItemGroup itemGroup, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {
         super(itemGroup, item, recipeType, recipe);
     }
 
@@ -36,12 +36,12 @@ public class PoseidonWaterGenerator extends AbstractGenerator {
 
     @Override
     public @NotNull String getMachineIdentifier() {
-        return "PSI_WATER_GENERATOR";
+        return "PSI_STEAM_GENERATOR";
     }
 
     @Override
     public @NotNull String getInventoryTitle() {
-        return PoseidonItems.PSI_WATER_GENERATOR.getItemMeta().getDisplayName();
+        return PoseidonItems.PSI_STEAM_GENERATOR.getItemMeta().getDisplayName();
     }
 
 
@@ -52,7 +52,7 @@ public class PoseidonWaterGenerator extends AbstractGenerator {
         int outputSlot = super.getOutputSlots()[0];
         ItemStack input = menu.getItemInSlot(inputSlot);
         SlimefunItem sfItem =  SlimefunItem.getByItem(input);
-        SlimefunItem targetSfItem = PoseidonSlimefunItems.PSI_WATER;
+        SlimefunItem targetSfItem = PoseidonSlimefunItems.PSI_STEAM;
         if (sfItem == null || !sfItem.getId().equals(targetSfItem.getId())) {
             return false;
         }
@@ -69,7 +69,7 @@ public class PoseidonWaterGenerator extends AbstractGenerator {
     @Override
     public @NotNull List<String> getDescription() {
         return List.of(
-                "放入1个水,生成2个水."
+                "放入1个汽,生成2个汽."
         );
     }
 }

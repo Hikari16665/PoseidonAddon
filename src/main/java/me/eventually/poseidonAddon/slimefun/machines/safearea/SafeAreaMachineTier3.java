@@ -8,35 +8,29 @@ import me.eventually.poseidonAddon.registry.PoseidonSlimefunItems;
 import org.bukkit.inventory.ItemStack;
 import org.jetbrains.annotations.NotNull;
 
-import java.util.List;
-
-public class SafeAreaMachineTier2 extends AbstractSafeAreaMachine {
-    protected SafeAreaMachineTier2(ItemGroup itemGroup, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {
+public class SafeAreaMachineTier3 extends ASafeAreaMachine {
+    public SafeAreaMachineTier3(ItemGroup itemGroup, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {
         super(itemGroup, item, recipeType, recipe);
     }
 
     @Override
     public int getRadius() {
-        return 32;
+        return 96;
     }
 
     @Override
     public @NotNull String getInventoryTitle() {
-        return PoseidonItems.PSI_GUARD_FORCE_MACHINE_II.getItemMeta().getDisplayName();
+        return PoseidonItems.PSI_GUARD_FORCE_MACHINE_III.getItemMeta().getDisplayName();
     }
 
     @Override
     public @NotNull String getMachineIdentifier() {
-        return PoseidonSlimefunItems.PSI_GUARD_FORCE_MACHINE_II.getId();
+        return PoseidonSlimefunItems.PSI_GUARD_FORCE_MACHINE_III.getId();
     }
 
-    @Override
-    protected List<String> getDescription() {
-        return List.of();
-    }
 
     @Override
     protected long getSingletonCharge() {
-        return 100;
+        return 160;
     }
 }

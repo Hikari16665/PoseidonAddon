@@ -59,6 +59,10 @@
             <id>sonatype</id>
             <url>https://oss.sonatype.org/content/groups/public/</url>
         </repository>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
     </repositories>
 
     <dependencies>
@@ -67,6 +71,25 @@
             <artifactId>paper-api</artifactId>
             <version>1.21.1-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.github.Hikari16665</groupId>
+            <artifactId>HikariLib</artifactId>
+            <version>13fd152d76</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.github.SlimefunGuguProject</groupId>
+            <artifactId>Slimefun4</artifactId>
+            <version>b39097e015</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>world.bentobox</groupId>
+            <artifactId>poseidon</artifactId>
+            <version>1.0.2</version>
+            <systemPath>${project.basedir}/lib/Poseidon-1.0.2.jar</systemPath>
+            <scope>system</scope>
         </dependency>
     </dependencies>
 </project>

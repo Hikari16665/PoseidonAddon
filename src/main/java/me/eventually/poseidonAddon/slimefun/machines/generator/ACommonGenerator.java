@@ -18,8 +18,8 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 
-public abstract class AbstractCommonGenerator extends AContainer {
-    protected AbstractCommonGenerator(ItemGroup itemGroup, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {
+public abstract class ACommonGenerator extends AContainer {
+    protected ACommonGenerator(ItemGroup itemGroup, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {
         super(itemGroup, item, recipeType, recipe);
     }
     private static final int[] OUTPUT_SLOTS = { 10, 11, 12, 13, 14, 15, 16 };
@@ -38,7 +38,7 @@ public abstract class AbstractCommonGenerator extends AContainer {
 
     @Override
     public int[] getOutputSlots() {
-        return super.getOutputSlots();
+        return OUTPUT_SLOTS;
     }
 
     @Override

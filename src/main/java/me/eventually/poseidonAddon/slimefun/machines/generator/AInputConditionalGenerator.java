@@ -19,7 +19,7 @@ import org.jetbrains.annotations.NotNull;
 import java.util.List;
 
 @SuppressWarnings("deprecation")
-public abstract class AbstractInputConditionalGenerator extends AContainer {
+public abstract class AInputConditionalGenerator extends AContainer {
     private static final int[] INPUT_SLOTS = {10};
     private static final int[] OUTPUT_SLOTS = {16};
     private static final int PROGRESS_BAR = 13;
@@ -52,7 +52,7 @@ public abstract class AbstractInputConditionalGenerator extends AContainer {
             List.of()
     ).build().getItem();
 
-    protected AbstractInputConditionalGenerator(ItemGroup itemGroup, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {
+    protected AInputConditionalGenerator(ItemGroup itemGroup, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {
         super(itemGroup, item, recipeType, recipe);
     }
 

@@ -29,8 +29,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-public abstract class AbstractSafeAreaMachine extends AContainer {
-    protected AbstractSafeAreaMachine(ItemGroup itemGroup, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {
+public abstract class ASafeAreaMachine extends AContainer {
+    protected ASafeAreaMachine(ItemGroup itemGroup, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {
         super(itemGroup, item, recipeType, recipe);
     }
     private static final int[] INPUT_SLOTS = {10, 11, 15, 16};
@@ -262,7 +262,28 @@ public abstract class AbstractSafeAreaMachine extends AContainer {
                                     2
                             )
                     );
-                    player.setRemainingAir(100);
+                    player.addPotionEffect(
+                            new PotionEffect(
+                                    PotionEffectType.INSTANT_HEALTH,
+                                    300,
+                                    1
+                            )
+                    );
+                    player.addPotionEffect(
+                            new PotionEffect(
+                                    PotionEffectType.SPEED,
+                                    300,
+                                    2
+                            )
+                    );
+                    player.addPotionEffect(
+                            new PotionEffect(
+                                    PotionEffectType.HASTE,
+                                    300,
+                                    3
+                            )
+                    );
+                    player.setRemainingAir(200);
                 });
                 b.getWorld().spawnParticle(
                         Particle.SONIC_BOOM,
