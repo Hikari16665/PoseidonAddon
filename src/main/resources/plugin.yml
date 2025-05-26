@@ -1,0 +1,6 @@
+name: PoseidonAddon
+version: '1.0.0'
+main: me.eventually.poseidonAddon.PoseidonAddon
+api-version: '1.21'
+load: STARTUP
+authors: [ Eventually ]
