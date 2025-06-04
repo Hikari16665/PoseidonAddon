@@ -134,7 +134,7 @@ public class PoseidonUnstablePressureMachine extends AContainer {
                 "[1]输入槽I、II各自满足该行的物品类型需要一致.",
                 "[2]当输入槽I水数量单调递增，输入槽II汽数量单调递减，则消耗输入槽I、II所有物品并输出1x 深水.",
                 "[3]当输入槽I水数量单调递减，输入槽II汽数量单调递增，则消耗输入槽I、II所有物品并输出1x 极汽.",
-                "[4]若所有输入槽均为16x流,则消耗输入槽所有物品并输出1x 渊",
+                "[4]若所有输入槽均为1x流,则消耗输入槽所有物品并输出1x 渊",
                 "匹配规则[2]和[3]时,输入槽I物品类型需要均为水，输入槽II物品类型需要均为汽",
                 "带[]规则匹配由上至下,触发单个条件/不满足要求时立刻停止继续匹配."
         );
@@ -179,7 +179,7 @@ public class PoseidonUnstablePressureMachine extends AContainer {
         SlimefunItem target_water = PoseidonSlimefunItems.PSI_WATER;
         SlimefunItem target_steam = PoseidonSlimefunItems.PSI_STEAM;
         SlimefunItem target_fluid = PoseidonSlimefunItems.PSI_FLUID;
-        int target_fluid_amount = 16;
+        int target_fluid_amount = 1;
 
         ItemStack[] inputStacks_I = new ItemStack[INPUT_SLOTS_I.length];
         ItemStack[] inputStacks_II = new ItemStack[INPUT_SLOTS_II.length];

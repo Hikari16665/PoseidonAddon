@@ -28,7 +28,9 @@ public class BlockListener implements Listener {
         ItemStack itemInMainHand = player.getInventory().getItemInMainHand();
         if (itemInMainHand == null || itemInMainHand.getType() != Material.TORCH) return;
         if (blockType == Material.GLASS) {
-            runIfChance(1 / 3f, () -> world.dropItemNaturally(blockLocation, PoseidonSlimefunItems.PSI_STEAM.getItem()));
+            ItemStack targetSteam = PoseidonSlimefunItems.PSI_STEAM.getItem().clone();
+            targetSteam.setAmount(3);
+            runIfChance(1 / 3f, () -> world.dropItemNaturally(blockLocation, targetSteam));
         }
     }
 
