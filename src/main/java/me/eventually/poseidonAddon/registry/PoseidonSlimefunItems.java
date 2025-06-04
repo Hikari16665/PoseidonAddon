@@ -1,9 +1,7 @@
 package me.eventually.poseidonAddon.registry;
 
-import io.github.thebusybiscuit.slimefun4.api.geo.GEOResource;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
-import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
 import me.eventually.hikarilib.itemstack.HikariItemStack;
 import me.eventually.poseidonAddon.PoseidonAddon;
 import me.eventually.poseidonAddon.slimefun.item.PoseidonItem;
@@ -318,9 +316,9 @@ public class PoseidonSlimefunItems {
         PSI_PITY_OF_THE_SEA.register(addon);
         PSI_WATER_GENERATOR.register(addon);
         PSI_STEAM_GENERATOR.register(addon);
-        PSI_GUARD_FORCE_MACHINE_I.register(addon);
-        PSI_GUARD_FORCE_MACHINE_II.register(addon);
-        PSI_GUARD_FORCE_MACHINE_III.register(addon);
+//        PSI_GUARD_FORCE_MACHINE_I.register(addon);
+//        PSI_GUARD_FORCE_MACHINE_II.register(addon);
+//        PSI_GUARD_FORCE_MACHINE_III.register(addon);
         PSI_HEART_OF_THE_SEA_GENERATOR.register(addon);
         PSI_GLASS_GENERATOR.register(addon);
         PSI_ICE_GENERATOR.register(addon);

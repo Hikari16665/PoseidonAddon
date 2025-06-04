@@ -84,12 +84,5 @@
             <version>b39097e015</version>
             <scope>provided</scope>
         </dependency>
-        <dependency>
-            <groupId>world.bentobox</groupId>
-            <artifactId>poseidon</artifactId>
-            <version>1.0.2</version>
-            <systemPath>${project.basedir}/lib/Poseidon-1.0.2.jar</systemPath>
-            <scope>system</scope>
-        </dependency>
     </dependencies>
 </project>
